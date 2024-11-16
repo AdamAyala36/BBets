@@ -58,7 +58,7 @@ for (i in 1:1000) {
       border="blue",
       breaks=100)
 ```
-BrownLow would be making 282.57 dollars from students.
+Brownlow would be losing 282.57 dollars from students.
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ```{r}
 mymin=numeric(1000)
@@ -85,7 +85,7 @@ for (i in 40:1000) {
 ```
 ## what is their average earnings
 ## the standard deviation and a 95% confidence interval for their earnings?
-  The average earnings of 40 Brownlow's is 270.16 dollars.
+  The average earnings of 40 Brownlow's is losing 270.16 dollars.
 
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
@@ -183,4 +183,4 @@ With a class of 35 students having the odds of 4.367 is best to have fair odds.
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
-
+Using BrLw.R we were able to see how Brownlow loses money from students due to the 2:1 odds. To change this to zero we could change the odds, and change the number of the class to make the earnings zero. With the odds of 4.389 and the number of class of 28. 

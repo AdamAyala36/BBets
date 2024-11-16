@@ -99,12 +99,33 @@ To figure out the how Brownlow's earnings become zero is with the odds of 4.389.
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
+```{r}
+mymin=numeric(1000)
+for (i in 1:1000) {
+  mymin[i]=BrLw(numClass = 28)
+}
+ smymin<- sort(mymin)
+ 
+ low=smymin[25]
+ high=smymin[975]
+ 
+ mean(smymin)
+ 
+  cat("low value (25th percentile):", low, "\n")
+ cat("high value (975th percentile):", high, "\n")
+ 
+ hist(smymin,
+      main="Histogram of Sorted Values",
+      xlab="Values",
+      ylab="Frequency",
+      col="skyblue",
+      border="blue",
+      breaks=100)
+```
+
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
-
-
-
-
+The class size of 28 is best, however this doesn't Brownlow's earnings to be zero, to have it become zero we need a decimal of students which is impossible. A class size of 29 is near 29 dollars while a class size of 28 is about -23 dollars. Meaning a class's size of 28 is best for Brownlow's earnings to get as close to 0. This was figured out through trial and error. 
 
 
 

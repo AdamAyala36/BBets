@@ -46,6 +46,7 @@ for (i in 1:1000) {
  low=smymin[25]
  high=smymin[975]
  
+ mean(smymin)
   cat("low value (25th percentile):", low, "\n")
  cat("high value (975th percentile):", high, "\n")
  
@@ -57,7 +58,7 @@ for (i in 1:1000) {
       border="blue",
       breaks=100)
 ```
-
+BrownLow would be making 282.57 dollars from students.
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ```{r}
 mymin=numeric(1000)
@@ -150,9 +151,36 @@ for (i in 1:1000) {
 
 The class size of 28 is best, however this doesn't Brownlow's earnings to be zero, to have it become zero we need a decimal of students which is impossible. A class size of 29 is near 29 dollars while a class size of 28 is about -23 dollars. Meaning a class's size of 28 is best for Brownlow's earnings to get as close to 0. This was figured out through trial and error. 
 
+# The question from rubric, 35 students to make odds fair
+
+```{r}
+mymin=numeric(1000)
+for (i in 1:1000) {
+  mymin[i]=BrLw(numClass = 35, odds=4.367)
+}
+ smymin<- sort(mymin)
+ 
+ low=smymin[25]
+ high=smymin[975]
+ 
+ mean(smymin)
+ 
+  cat("low value (25th percentile):", low, "\n")
+ cat("high value (975th percentile):", high, "\n")
+ 
+ hist(smymin,
+      main="Histogram of Sorted Values",
+      xlab="Values",
+      ylab="Frequency",
+      col="skyblue",
+      border="blue",
+      breaks=100)
+```
+With a class of 35 students having the odds of 4.367 is best to have fair odds.
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
 
